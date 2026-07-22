@@ -1,0 +1,21 @@
+Scenario,crowd_count,occupancy_pct,queue_length,avg_waiting_time_min,weather,weather_severity,crowd_behavior,medical_incidents,security_incidents,fire_alarm,stampede_alert,bomb_threat,emergency_evacuation,volunteer_gap,camera_failure,network_failure,power_failure,road_traffic_index,visibility_km,Expected_Risk,Predicted_Risk,Result
+Shopping Mall - Normal Weekend,1800,45,20,3,Sunny,0.0,Calm,0,0,0,0,0,0,2,0,0,0,25,10,Safe,Safe,PASS
+Airport Check-in Rush Hour,5200,72,260,14,Cloudy,0.5,Normal,1,1,0,0,0,0,12,0,0,0,55,8,Warning,Dangerous,FAIL
+Railway Station Festival Rush,9200,96,780,24,Rain,2.0,Aggressive,3,2,0,1,0,1,35,0,1,0,82,4,Dangerous,Dangerous,PASS
+Corporate Event,650,32,8,2,Sunny,0.0,Calm,0,0,0,0,0,0,1,0,0,0,18,10,Safe,Safe,PASS
+Cricket Stadium Before Match,28000,88,520,18,Cloudy,0.5,Normal,2,2,0,0,0,0,20,0,0,0,68,9,Warning,Dangerous,FAIL
+College Festival Peak Hour,7200,82,340,12,Sunny,0.0,Normal,1,1,0,0,0,0,15,0,0,0,60,10,Warning,Dangerous,FAIL
+Metro Station Evening Rush,9800,97,890,26,Rain,1.8,Aggressive,2,3,0,1,0,1,40,1,1,0,90,3,Dangerous,Dangerous,PASS
+Shopping Mall Weekday,2100,48,28,4,Cloudy,0.5,Calm,0,0,0,0,0,0,2,0,0,0,32,9,Safe,Safe,PASS
+Music Concert During Rain,14500,91,610,20,Storm,2.8,Aggressive,3,2,0,1,0,1,28,0,1,1,76,2,Dangerous,Dangerous,PASS
+Hospital Visitor Hours,1300,54,45,6,Sunny,0.0,Calm,1,0,0,0,0,0,4,0,0,0,22,10,Safe,Safe,PASS
+Temple Festival - Moderate Crowd,8500,78,280,10,Cloudy,0.5,Normal,1,1,0,0,0,0,10,0,0,0,58,9,Warning,Dangerous,FAIL
+Navratri Garba Peak Hour,24000,99,1200,32,Rain,2.2,Panic,6,4,0,1,0,1,55,1,1,0,92,3,Dangerous,Dangerous,PASS
+Bus Terminal Morning,4100,66,120,8,Fog,1.5,Normal,1,0,0,0,0,0,8,0,0,0,48,2,Warning,Warning,PASS
+Shopping Mall Fire Alarm,6200,74,350,15,Sunny,0.0,Panic,2,2,1,1,0,1,18,0,0,0,42,10,Dangerous,Dangerous,PASS
+University Convocation,3200,60,75,5,Sunny,0.0,Calm,0,0,0,0,0,0,3,0,0,0,30,10,Safe,Safe,PASS
+International Airport Security Alert,12000,86,420,16,Sunny,0.0,Aggressive,1,4,0,0,1,1,22,0,1,0,70,10,Dangerous,Dangerous,PASS
+Cinema Weekend Evening Show,1800,58,55,5,Cloudy,0.5,Calm,0,0,0,0,0,0,2,0,0,0,30,9,Safe,Safe,PASS
+Political Rally,30000,98,1050,28,Extreme Heat,2.5,Aggressive,5,5,0,1,0,1,48,1,1,0,88,8,Dangerous,Dangerous,PASS
+Exhibition Hall,4600,68,140,8,Sunny,0.0,Normal,1,0,0,0,0,0,8,0,0,0,40,10,Warning,Warning,PASS
+Emergency Stadium Evacuation,42000,100,1800,40,Storm,3.0,Panic,8,6,1,1,0,1,70,1,1,1,95,1,Dangerous,Dangerous,PASS

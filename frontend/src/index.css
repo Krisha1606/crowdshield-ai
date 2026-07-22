@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #2563EB;
+  --color-secondary: #06B6D4;
+  --color-accent: #3B82F6;
+  --color-success: #22C55E;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+  
+  /* Dynamic App Colors mapped to CSS Custom Variables */
+  --color-app-bg: var(--background);
+  --color-app-text: var(--text-primary);
+  --color-app-text-muted: var(--text-muted);
+  --color-app-card: var(--card-bg);
+  --color-app-card-border: var(--card-border);
+  --color-app-sidebar: var(--sidebar-bg);
+  --color-app-navbar: var(--navbar-bg);
+  --color-app-glass-bg: var(--glass-bg);
+  --color-app-glass-border: var(--glass-border);
+  
+  /* Dynamic Slate Color Overrides */
+  --color-slate-950: var(--slate-950);
+  --color-slate-900: var(--slate-900);
+  --color-slate-850: var(--slate-850);
+  --color-slate-800: var(--slate-800);
+  --color-slate-700: var(--slate-700);
+  --color-slate-650: var(--slate-650);
+  --color-slate-600: var(--slate-600);
+  --color-slate-500: var(--slate-500);
+  --color-slate-450: var(--slate-450);
+  --color-slate-400: var(--slate-400);
+  --color-slate-350: var(--slate-350);
+  --color-slate-300: var(--slate-300);
+  --color-slate-200: var(--slate-200);
+  --color-slate-100: var(--slate-100);
+  
+  --font-sans: 'Inter', sans-serif;
+  --font-heading: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  --font-outfit: 'Plus Jakarta Sans', sans-serif;
+}
+
+:root {
+  --background: #F5F6FA;
+  --text-primary: #1A1D2E;
+  --text-muted: #5A6072;
+  --card-bg: #FFFFFF;
+  --card-border: #E4E7EF;
+  --sidebar-bg: #FFFFFF;
+  --navbar-bg: rgba(255,255,255,0.92);
+  --glass-bg: rgba(255, 255, 255, 0.75);
+  --glass-border: rgba(228, 231, 239, 0.8);
+  --shadow-premium: 0 8px 32px -4px rgba(99, 102, 241, 0.08), 0 2px 8px -2px rgba(99, 102, 241, 0.04);
+
+  /* Gradient Variables */
+  --gradient-primary: linear-gradient(135deg, #4F46E5 0%, #6366F1 50%, #818CF8 100%);
+  --gradient-sunset: linear-gradient(135deg, #1E1B4B 0%, #4F46E5 100%);
+  --gradient-pink-purple: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
+  --gradient-green-blue: linear-gradient(135deg, #0EA5E9 0%, #6366F1 100%);
+  --gradient-orange-pink: linear-gradient(135deg, #EC4899 0%, #6366F1 100%);
+
+  /* Slate overrides for Light mode — readable scale */
+  --slate-950: #F5F6FA;
+  --slate-900: #FFFFFF;
+  --slate-850: #E4E7EF;
+  --slate-800: #D1D5E0;
+  --slate-700: #B0B7C9;
+  --slate-650: #8891A8;
+  --slate-600: #8891A8;
+  --slate-500: #5A6072;
+  --slate-450: #454D60;
+  --slate-400: #3D4455;
+  --slate-350: #2E3446;
+  --slate-300: #252D3F;
+  --slate-200: #1C2435;
+  --slate-100: #1A1D2E;
+
+  /* Track colors for progress bars (always light in light mode) */
+  --track-bg: #EAECF5;
+}
+
+.dark {
+  --background: #0D0F1A;
+  --text-primary: #EEF0F8;
+  --text-muted: #8891A8;
+  --card-bg: #131627;
+  --card-border: #1F2440;
+  --sidebar-bg: #0D0F1A;
+  --navbar-bg: rgba(13, 15, 26, 0.92);
+  --glass-bg: rgba(19, 22, 39, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.06);
+  --shadow-premium: 0 20px 40px -15px rgba(0,0,0,0.7), 0 1px 3px rgba(0,0,0,0.4);
+
+  /* Slate overrides for Dark mode */
+  --slate-950: #0D0F1A;
+  --slate-900: #131627;
+  --slate-850: #1F2440;
+  --slate-800: #1F2440;
+  --slate-700: #2E3558;
+  --slate-650: #404D70;
+  --slate-600: #404D70;
+  --slate-500: #8891A8;
+  --slate-450: #9BA5C0;
+  --slate-400: #A8B0CA;
+  --slate-350: #C0C8E0;
+  --slate-300: #D0D8F0;
+  --slate-200: #DEE4F8;
+  --slate-100: #EEF0F8;
+
+  --track-bg: #1F2440;
+}
+
+@layer base {
+  body {
+    @apply bg-app-bg text-app-text font-sans antialiased overflow-x-hidden transition-colors duration-300;
+  }
+}
+
+/* Custom Scrollbar for modern web experience */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--card-border);
+  border-radius: 999px;
+  transition: background 0.2s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* Glassmorphism utilities */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+}
+
+.glass-premium {
+  background: var(--glass-bg);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-premium);
+}
+
+/* Gradient Classes */
+.bg-gradient-premium {
+  background: var(--gradient-primary);
+}
+
+.bg-gradient-sunset {
+  background: var(--gradient-sunset);
+}
+
+.bg-gradient-pink-purple {
+  background: var(--gradient-pink-purple);
+}
+
+.bg-gradient-green-blue {
+  background: var(--gradient-green-blue);
+}
+
+.bg-gradient-orange-pink {
+  background: var(--gradient-orange-pink);
+}
+
+.text-gradient-premium {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-sunset {
+  background: var(--gradient-sunset);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-pink-purple {
+  background: var(--gradient-pink-purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom animations */
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float-delayed {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+.animate-float-delayed {
+  animation: float-delayed 8s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+@keyframes scanner {
+  0% { transform: translateY(-100%); opacity: 0.2; }
+  50% { opacity: 0.9; }
+  100% { transform: translateY(100%); opacity: 0.2; }
+}
+
+.animate-scanner {
+  animation: scanner 4s ease-in-out infinite;
+}
+
+/* Ambient glow orb styles */
+.glow-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(140px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.08;
+}
+
+.dark .glow-orb {
+  opacity: 0.15;
+}
+
+/* Premium Perspective System */
+.perspective-container {
+  perspective: 1200px;
+}
+
+.perspective-card {
+  transform-style: preserve-3d;
+  transform: rotateX(4deg) rotateY(-4deg) translateZ(0);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.6s ease;
+}
+
+.perspective-card:hover {
+  transform: rotateX(0deg) rotateY(0deg) translateZ(20px);
+}
+
+/* Layered Depth System Shadows */
+.shadow-depth-1 {
+  box-shadow: 
+    0 1px 2px rgba(0, 0, 0, 0.05),
+    0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-depth-2 {
+  box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.07),
+    0 12px 30px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.shadow-depth-3 {
+  box-shadow: 
+    0 15px 35px rgba(0, 0, 0, 0.15),
+    0 30px 60px rgba(0, 0, 0, 0.2),
+    inset 0 1px 1px rgba(255, 255, 255, 0.08);
+}
+
+.shadow-glow-primary {
+  box-shadow: 0 0 40px rgba(124, 58, 237, 0.15);
+}
+
+.shadow-glow-accent {
+  box-shadow: 0 0 40px rgba(236, 72, 153, 0.15);
+}
+
+.shadow-planora {
+  box-shadow: 
+    0 1px 2px rgba(15, 23, 42, 0.03),
+    0 8px 16px rgba(15, 23, 42, 0.04),
+    0 30px 80px rgba(15, 23, 42, 0.10);
+}
+
+.dark .shadow-planora {
+  box-shadow: 
+    0 1px 2px rgba(0, 0, 0, 0.2),
+    0 8px 24px rgba(0, 0, 0, 0.3),
+    0 30px 80px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* Toast slide-in animation (used by Navbar notification toasts) */
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(110%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+}

@@ -1,0 +1,21 @@
+Scenario,crowd_count,occupancy_pct,arrival_rate_per_min,entry_rate_per_min,queue_length,avg_waiting_time_min,entry_gates,gate_efficiency,weather,weather_severity,visibility_km,road_traffic_index,parking_occupancy_pct,crowd_density_per_sqm,crowd_behavior,camera_coverage_pct,volunteer_gap,medical_incidents,security_incidents,Expected_Congestion
+Shopping Mall - Weekday Morning,1800,42,55,52,18,2,6,92,Sunny,0.0,10,22,38,1.2,Calm,98,2,0,0,Low
+Corporate Office Entry,2500,48,80,76,35,3,8,95,Cloudy,0.5,9,28,45,1.5,Calm,99,3,0,0,Low
+Hospital Visiting Hours,1400,52,45,42,40,5,4,90,Sunny,0.0,10,20,55,1.8,Calm,100,4,1,0,Low
+University Convocation,4200,68,130,120,120,8,7,86,Sunny,0.0,10,42,70,2.6,Normal,97,8,0,0,Medium
+Temple Festival,8500,80,210,175,290,11,6,78,Cloudy,0.5,8,60,82,3.8,Normal,95,14,1,1,Medium
+Airport Check-in Rush,7000,76,240,220,260,12,10,88,Cloudy,0.5,9,58,76,3.5,Normal,99,10,1,1,Medium
+Bus Terminal Morning,4800,72,170,150,180,9,5,82,Fog,1.5,3,48,72,3.0,Normal,94,9,1,0,Medium
+Shopping Mall Weekend,6200,74,180,165,220,10,8,85,Sunny,0.0,10,50,85,3.2,Normal,98,10,0,0,Medium
+Metro Evening Peak,9800,92,360,250,720,22,8,69,Rain,2.0,4,84,88,5.6,Aggressive,93,28,2,2,High
+Railway Festival Rush,12000,96,420,270,980,28,9,64,Rain,2.2,3,90,92,6.2,Aggressive,92,35,3,2,High
+Cricket Stadium Entry,28000,88,650,520,610,18,16,80,Cloudy,0.5,8,76,95,4.8,Normal,98,18,2,2,High
+Music Concert Exit,16000,94,410,260,850,25,8,66,Storm,2.8,2,82,90,5.9,Aggressive,90,30,3,2,High
+Navratri Garba Peak,24000,98,700,480,1250,34,14,72,Rain,2.2,3,92,97,6.8,Panic,94,42,5,4,High
+Political Rally,30000,97,760,500,1380,36,12,68,Extreme Heat,2.5,8,88,93,6.5,Aggressive,91,40,4,5,High
+Airport Security Delay,11000,90,330,170,640,21,10,58,Sunny,0.0,10,66,84,4.9,Aggressive,98,24,2,4,High
+Exhibition Hall,5200,70,160,145,160,8,6,84,Sunny,0.0,10,38,74,2.8,Normal,96,7,0,0,Medium
+IT Park Evening Exit,7600,78,220,190,240,11,9,87,Cloudy,0.5,9,62,79,3.4,Normal,99,9,0,0,Medium
+Cinema Weekend Show,2300,58,70,66,45,4,5,93,Cloudy,0.5,9,26,48,1.7,Calm,100,2,0,0,Low
+Emergency Stadium Exit,40000,100,950,380,1800,42,18,52,Storm,3.0,1,95,100,8.2,Panic,88,55,8,6,High
+Toll Plaza Holiday Traffic,9000,82,280,210,340,14,12,83,Rain,1.5,5,91,80,4.0,Normal,97,12,1,1,Medium

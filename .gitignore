@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.db
+
+# Logs
+*.log
+
+# Virtual environment
+venv/
+.env
+
+# VS Code / Visual Studio
+.vscode/
+.vs/
+
+# Node
+node_modules/
+
+# Temporary files
+tempCodeRunnerFile.py
+
+# Scratch folder
+scratch/
+
+# Generated QR images
+qr_system/generated/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+attendees.csv
+test1000.csv

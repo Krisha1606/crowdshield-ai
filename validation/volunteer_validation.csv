@@ -1,0 +1,21 @@
+Scenario,crowd_count,occupancy_pct,arrival_rate_per_min,entry_rate_per_min,queue_length,weather,weather_severity,medical_incidents,security_incidents,entry_gates,gate_efficiency,is_peak_hour,crowd_behavior,venue_capacity,Expected_Volunteers
+University Tech Fest,850,68,45,42,40,Sunny,1,0,0,4,92,0,Normal,1500,8
+College Convocation,1200,72,55,52,55,Cloudy,2,0,0,5,90,1,Normal,2000,12
+Shopping Mall Weekend,1800,75,70,65,80,Sunny,1,1,0,6,88,1,Normal,3000,18
+Industrial Expo,2500,78,90,84,120,Cloudy,2,0,1,8,87,1,Normal,5000,25
+Navratri Garba Night,3200,82,110,98,160,Rain,3,1,1,10,84,1,Excited,6000,35
+Music Concert,4200,86,130,118,220,Cloudy,2,1,1,10,82,1,Excited,7000,45
+Metro Peak Hour,5000,88,150,138,260,Sunny,1,0,0,12,90,1,Normal,8000,52
+Temple Festival,6500,90,180,165,340,Cloudy,2,2,1,12,80,1,Excited,10000,65
+Railway Holiday Rush,8000,91,210,192,420,Rain,3,2,1,14,79,1,Normal,12000,80
+Airport Departure Rush,9500,92,230,212,470,Cloudy,2,1,2,16,82,1,Normal,15000,92
+IPL Cricket Match,12000,94,270,248,620,Sunny,1,2,2,18,80,1,Excited,25000,110
+Political Rally,15000,95,300,276,720,Cloudy,2,2,3,20,78,1,Aggressive,30000,135
+Football Final,18000,96,340,315,820,Rain,3,3,3,22,76,1,Excited,35000,160
+City Cultural Festival,22000,96,380,352,930,Cloudy,2,2,2,24,79,1,Normal,40000,185
+International Concert,26000,97,420,388,1050,Rain,3,3,3,26,75,1,Excited,45000,215
+Kumbh Mela Sector,32000,98,500,462,1350,Sunny,1,4,4,30,73,1,Excited,60000,260
+Republic Day Parade,38000,98,560,520,1500,Sunny,1,3,3,32,74,1,Normal,70000,300
+New Year Celebration,45000,99,620,575,1750,Cloudy,2,4,5,36,72,1,Excited,80000,360
+Emergency Evacuation,52000,99,700,640,2100,Rain,4,8,8,40,68,1,Panic,90000,450
+Mega Religious Gathering,65000,99,820,760,2600,Rain,4,10,10,48,65,1,Panic,120000,580

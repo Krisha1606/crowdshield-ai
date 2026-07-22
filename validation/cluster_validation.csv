@@ -1,0 +1,21 @@
+Scenario,crowd_count,occupancy_pct,queue_length,avg_waiting_time_min,congestion_score,risk_score,crowd_density_per_sqm,volunteer_gap,Expected_Cluster
+Small Community Fair,3500,42,6,3.8,15,12,1.2,2,Low Crowd
+School Annual Day,5200,55,10,4.2,20,16,1.5,3,Low Crowd
+College Tech Fest,9500,68,25,5.3,31,26,2.0,8,Medium Crowd
+Shopping Mall Weekend,13000,72,35,5.8,38,29,2.1,10,Medium Crowd
+Temple Weekend Crowd,18000,78,48,6.1,42,33,2.3,12,Medium Crowd
+Metro Peak Hour,24000,84,55,6.5,46,35,2.4,15,Medium Crowd
+Industrial Expo,30000,86,40,5.8,29,26,2.3,18,High Crowd
+Music Concert,42000,89,52,6.0,31,27,2.4,22,High Crowd
+Airport Holiday Rush,52000,91,60,6.3,33,28,2.5,28,High Crowd
+IPL Cricket Match,68000,92,75,6.8,36,30,2.6,35,High Crowd
+International Trade Expo,82000,94,90,7.1,38,31,2.6,40,High Crowd
+Political Rally,30000,95,2500,9.8,57,44,2.5,40,Critical Crowd
+Garba Festival Exit,26000,94,3100,10.5,61,46,2.6,45,Critical Crowd
+Temple Festival Emergency,35000,96,3900,11.2,66,49,2.6,48,Critical Crowd
+Football Stadium Exit,42000,97,4300,11.8,70,52,2.7,52,Critical Crowd
+Railway Platform Stampede Risk,55000,98,4700,12.4,74,55,2.8,55,Critical Crowd
+Kumbh Mela Sector,78000,99,5200,13.0,78,58,2.9,60,Critical Crowd
+Emergency Evacuation,45000,98,6100,14.2,82,63,2.8,70,Critical Crowd
+Mega Religious Gathering,95000,99,7000,15.0,85,66,3.0,80,Critical Crowd
+City Disaster Evacuation,120000,99,8200,16.0,88,70,3.2,90,Critical Crowd

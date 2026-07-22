@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "CrowdShield AI Companion",
+    "slug": "crowdshield-companion",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./src/assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0b0f19"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0b0f19"
+      }
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-camera"
+    ]
+  }
+}
